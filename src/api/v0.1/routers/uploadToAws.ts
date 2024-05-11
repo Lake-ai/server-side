@@ -65,6 +65,7 @@ app.post("/", async (req: Request, res: Response) => {
     }
     else{
         const { url } = req.body;
+        console.log(req.body.url)
 
         const extractedText = await extractTextFromURL(url);
 
